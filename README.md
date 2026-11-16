@@ -1,7 +1,8 @@
 # QC-GIS Playwright
 
 End-to-end tests for the GreenSpace–LST console written by Justin Rivera
-This uses pytest-playwright and run with `uv`.
+
+## This uses pytest-playwright and it runs with `uv`.
 
 ## Run
 
