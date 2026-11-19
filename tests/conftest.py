@@ -15,6 +15,9 @@ from pathlib import Path
 import pytest
 from playwright.sync_api import BrowserContext, Page, Route
 
+# The results table printed after each run (tests/summary.py); pytest finds hooks by name here.
+from summary import pytest_runtest_makereport, pytest_terminal_summary  # noqa: F401
+
 # The app repo's data files, next to this repo by default.
 DATA_DIR = Path(os.environ.get("QC_DATA_DIR", Path(__file__).resolve().parents[2] / "! QC - GIS" / "GIS" / "public" / "data"))
 LIVE = os.environ.get("QC_API", "mock") == "live"

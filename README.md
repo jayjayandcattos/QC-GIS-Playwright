@@ -25,6 +25,10 @@ End-to-end tests for the GreenSpace–LST console written by Justin Rivera
    One file or one test: `uv run pytest tests/issues/test_issue_104_opacity_zero.py -k stacked`.
    Watch it: add `--headed --slowmo 300`. Traces for failures: add `--tracing retain-on-failure`.
 
+   After every run a **"What was tested"** table lists each test grouped by area (UI, then
+   GitHub issues) and feature, with what it checked, PASS / FAIL / SKIP and its time
+   (`tests/summary.py`). A test's docstring, when it has one, becomes its description.
+
 ## Data
 
 The console's database is still experimental, so the tests do not depend on it. The `api`
